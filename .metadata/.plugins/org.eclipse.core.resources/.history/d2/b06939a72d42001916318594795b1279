@@ -1,0 +1,5 @@
+package com.maveric.pageobjects;
+
+public class CorporatePointOfContact {
+
+}

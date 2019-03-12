@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+	<run>
+		<include name="low"></include>
+	</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.maveric.test.MaveriConnectTest">
+      	<methods>
+      		<include name="positiveCredentialCheckwithPOM()"></include>
+      		<include name="negativeCredentialCheckwithPOM"></include>
+      		<include name="inValidCredCheck"></include>
+      		<include name="positiveCredentialCheck"></include>
+      	</methods>
+      	
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,37 @@
+package com.maveric.reference;
+
+import org.testng.annotations.*;
+import org.testng.annotations.Test;
+
+public class BaseTest {
+	
+	/*@BeforeMethod
+	public void setUp() {
+		System.out.println("Setup");
+	}
+	@AfterMethod
+	public void close() {
+		System.out.println("Browser Closed");
+	}
+	@Test
+	public void testCase1() {
+		System.out.println("Test Case 1");
+	}
+	@Test
+	public void testCase2() {
+		System.out.println("Test Case 2");
+	}*/
+	
+	@Test
+	public void testMethod2()
+	{
+		int[] num = {1,2,3,4};//single dimension array
+		int[][] numMulti = {{1,2,3,4},{5,6},{7,8}};
+		System.out.println(numMulti[0][3]); // 1234
+		System.out.println(numMulti[1][0]); // 56
+		 
+		
+		
+	}
+
+}

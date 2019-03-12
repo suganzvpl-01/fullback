@@ -1,0 +1,33 @@
+package com.maveric.utilities;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtils {
+	
+	public static XSSFSheet getSheetLevel(String fileNamewithPath, String sheetName) throws IOException
+	{
+		FileInputStream fileIn= new FileInputStream(fileNamewithPath);
+		XSSFWorkbook book=new XSSFWorkbook(fileIn);
+		XSSFSheet sheet=book.getSheet(sheetName);
+		return sheet;	
+	}
+	public static XSSFRow getRowLevel()
+	{
+		FileInputStream fileIn= new FileInputStream(fileNamewithPath);
+		XSSFWorkbook book=new XSSFWorkbook(fileIn);
+		XSSFSheet sheet=book.getSheet(sheetName);
+		
+		int rowsCount=sheet.getPhysicalNumberOfRows();
+		XSSFRow row =sheet.getRow(1);
+		int cellCount=row.getPhysicalNumberOfCells();
+		return sheet;	
+		
+	}
+
+}

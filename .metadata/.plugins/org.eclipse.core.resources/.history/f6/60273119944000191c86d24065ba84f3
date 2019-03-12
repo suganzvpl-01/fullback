@@ -1,0 +1,28 @@
+package com.maveric.reference;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class PropertiesTest {
+
+	public static void main(String[] args) throws FileNotFoundException{
+		// TODO Auto-generated method stub
+		
+		/*//example for try catch
+		try {
+			FileInputStream fileIn = new FileInputStream("Utilities1/data.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		// this will run since we handled the error
+		System.out.println("Test Checked");*/
+		
+		FileInputStream fileIn=new FileInputStream("Utilities/data.properties");
+		
+		
+		
+	}
+
+}

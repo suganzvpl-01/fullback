@@ -1,0 +1,21 @@
+package com.maveric.reference;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelTest {
+
+	public static void main(String[] args) throws IOException {
+
+		FileInputStream fileIn= new FileInputStream("Utilities/TestData.xlsx");
+		XSSFWorkbook workbook=new XSSFWorkbook(fileIn);
+		XSSFSheet sheet=book.getSheet("sheet1");
+		
+		
+	}
+
+}

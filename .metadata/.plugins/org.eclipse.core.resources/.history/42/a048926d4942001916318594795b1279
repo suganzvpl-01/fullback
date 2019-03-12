@@ -1,0 +1,13 @@
+package com.maveric.reference;
+
+
+
+public class BaseTest {
+	
+	@BeforeMethod
+	public void setUp() {
+		System.out.println("Setup");
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package com.maveric.test;
+
+import org.testng.annotations.*;
+
+import com.maveric.initialization.LaunchActivities;
+
+public class TimeCardTest extends LaunchActivities {
+
+	@Test
+	public void timeCardFillTest()
+	{
+		System.out.println();
+	}
+	
+}

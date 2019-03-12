@@ -1,0 +1,35 @@
+package com.maveric.collectiondemo;
+
+import java.util.ArrayList;
+
+public class CollectionDemo {
+
+	@SuppressWarnings("unchecked")
+	public static void main(String[] args) {
+		//normal
+		int x=10;
+		int y = 20;
+		System.out.println(x+y);
+		
+		Object a = x; // boxing (just stores anyway)
+		Object b = y;
+		Object c=x=y;
+		int d= (int) a; 
+		System.out.println(c);
+		
+		ArrayList list = new ArrayList();
+		list.add(1);
+		list.add("test");
+		list.add(45);
+		
+		int size= list.size();
+		System.out.println(size);
+		
+		int res = list.get(1);
+		System.out.println(res);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.maveric.reference;
+
+import java.io.FileInputStream;
+
+public class PropertiesTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileInputStream fileIn = new FileInputStream("Utilities/data.properties");
+	}
+
+}

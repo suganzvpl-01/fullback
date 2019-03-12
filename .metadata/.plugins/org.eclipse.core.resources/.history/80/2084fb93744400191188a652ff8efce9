@@ -1,0 +1,9 @@
+package com.maveric.test;
+
+import com.maveric.initialization.LaunchActivities;
+
+public class TimeCardTest extends LaunchActivities {
+
+	
+	
+}

@@ -1,0 +1,88 @@
+package com.maveric.reference;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+import com.maveric.utilities.ExcelUtils;
+
+public class ExcelTest {
+
+	public static void main(String[] args) throws IOException {
+
+		/*FileInputStream fileIn= new FileInputStream("Utilities/TestData.xlsx");
+		XSSFWorkbook book=new XSSFWorkbook(fileIn);
+		XSSFSheet sheet=book.getSheet("sheet1");
+		int rowsCount=sheet.getPhysicalNumberOfRows();
+		XSSFRow row =sheet.getRow(1);
+		int cellCount=row.getPhysicalNumberOfCells();
+		XSSFCell cell =row.getCell(1);
+		
+		//double value=cell.getNumericCellValue(); //if number in the cell
+		//String valueString = cell.getStringCellValue(); //if String in the cell
+		
+		DataFormatter format=new DataFormatter();
+		String value = format.formatCellValue(cell);
+		
+		System.out.println(value);*/
+				
+	/*	String cellvalue = ExcelUtils.getCellvalueAsString("Utilities/TestData.xlsx", "sheet1", 0, 1);
+		System.out.println(cellvalue);*/
+		
+		FileInputStream fileIn = new FileInputStream("Utilities/TestData.xlsx");
+		XSSFWorkbook book=new XSSFWorkbook(fileIn);
+		XSSFSheet sheet=book.getSheet("sheet1");
+		int rowCount=sheet.getPhysicalNumberOfRows();
+		XSSFRow row =sheet.getRow(0);
+		int cellCount=row.getPhysicalNumberOfCells();
+		
+		
+		/*
+		
+		for (int i = 0;i<rowCount;i++)
+		{
+			for(int j=0;j<sheet.getRow(0).getPhysicalNumberOfCells();j++) {
+				System.out.println(i+" "+j);
+				XSSFCell cell = sheet.getRow(i).getCell(j);
+				DataFormatter format=new DataFormatter();
+				String value = format.formatCellValue(cell);
+				System.out.println(value);
+				
+			}
+			
+		}*/
+		
+		
+		
+	}
+
+	public Object[][] excelMethodWithObject()
+	{
+		Object excel[][]= new Object[][];
+		
+		temp[0][0]="bbbb";
+		temp[0][1]="hgfc";
+		
+		temp[1][0]="aaaa";
+		temp[1][1]="hjgytfyt";
+		
+		temp[2][0]="cccc";
+		temp[2][1]="gftdtrd";
+		return temp;
+		
+	}
+	
+	
+	@Test(dataProvider="cred")
+	public void testMethod2(String userName,String passWord)
+	{
+		System.out.println("Test Mthod2 " + userName+passWord);
+	}
+}

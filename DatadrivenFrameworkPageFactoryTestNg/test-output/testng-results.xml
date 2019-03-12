@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="7" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="88361" started-at="2019-03-11T06:03:00Z" finished-at="2019-03-11T06:04:28Z">
+    <groups>
+      <group name="dataprovider">
+        <method signature="MaveriConnectTest.negativeCredentialCheckwithPOM(java.lang.String, java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="negativeCredentialCheckwithPOM" class="com.maveric.test.MaveriConnectTest"/>
+      </group> <!-- dataprovider -->
+    </groups>
+    <test name="Test" duration-ms="88361" started-at="2019-03-11T06:03:00Z" finished-at="2019-03-11T06:04:28Z">
+      <class name="com.maveric.test.MaveriConnectTest">
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="initialization" is-config="true" duration-ms="7522" started-at="2019-03-11T06:03:00Z" finished-at="2019-03-11T06:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="negativeCredentialCheckwithPOM(java.lang.String, java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="negativeCredentialCheckwithPOM" duration-ms="10287" started-at="2019-03-11T06:03:08Z" data-provider="testCasesForNegativeCredentials" finished-at="2019-03-11T06:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[35274]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeCredentialCheckwithPOM -->
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="initialization" is-config="true" duration-ms="8578" started-at="2019-03-11T06:03:18Z" finished-at="2019-03-11T06:03:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="negativeCredentialCheckwithPOM(java.lang.String, java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="negativeCredentialCheckwithPOM" duration-ms="9783" started-at="2019-03-11T06:03:27Z" data-provider="testCasesForNegativeCredentials" finished-at="2019-03-11T06:03:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bbbb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vgfy487]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeCredentialCheckwithPOM -->
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="initialization" is-config="true" duration-ms="6965" started-at="2019-03-11T06:03:36Z" finished-at="2019-03-11T06:03:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="negativeCredentialCheckwithPOM(java.lang.String, java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="negativeCredentialCheckwithPOM" duration-ms="17543" started-at="2019-03-11T06:03:43Z" data-provider="testCasesForNegativeCredentials" finished-at="2019-03-11T06:04:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cccc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dryv5th7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeCredentialCheckwithPOM -->
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="initialization" is-config="true" duration-ms="11159" started-at="2019-03-11T06:04:01Z" finished-at="2019-03-11T06:04:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="negativeCredentialCheckwithPOM(java.lang.String, java.lang.String)[pri:0, instance:com.maveric.test.MaveriConnectTest@c038203]" name="negativeCredentialCheckwithPOM" duration-ms="15786" started-at="2019-03-11T06:04:12Z" data-provider="testCasesForNegativeCredentials" finished-at="2019-03-11T06:04:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ddd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hgbyh54758]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeCredentialCheckwithPOM -->
+      </class> <!-- com.maveric.test.MaveriConnectTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

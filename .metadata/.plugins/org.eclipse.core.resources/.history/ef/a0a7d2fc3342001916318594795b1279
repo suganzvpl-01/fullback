@@ -1,0 +1,16 @@
+package com.maveric.pageobjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class CorporatePointOfContactPage {
+	
+	WebDriver driver;
+	WebDriverWait wait;
+
+	public CorporatePointOfContactPage(WebDriver driver,WebDriverWait wait) {
+		this.driver=driver;
+		this.wait=wait;
+	}
+	
+}

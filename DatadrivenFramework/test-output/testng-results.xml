@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11813" started-at="2019-03-08T05:40:31Z" finished-at="2019-03-08T05:40:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11813" started-at="2019-03-08T05:40:31Z" finished-at="2019-03-08T05:40:42Z">
+      <class name="com.maveric.test.MaveriConnectTest">
+        <test-method status="PASS" signature="negativeCredentialCheckwithPOM()[pri:0, instance:com.maveric.test.MaveriConnectTest@1efbd816]" name="negativeCredentialCheckwithPOM" duration-ms="11784" started-at="2019-03-08T05:40:31Z" finished-at="2019-03-08T05:40:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeCredentialCheckwithPOM -->
+      </class> <!-- com.maveric.test.MaveriConnectTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

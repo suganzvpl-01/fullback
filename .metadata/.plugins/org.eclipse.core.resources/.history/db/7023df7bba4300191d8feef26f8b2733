@@ -1,0 +1,41 @@
+package com.maveric.utilities;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.hssf.record.chart.DataFormatRecord;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtils {
+	
+	public static XSSFSheet getSheetLevel(String fileNamewithPath, String sheetName) throws IOException
+	{
+		FileInputStream fileIn= new FileInputStream(fileNamewithPath);
+		XSSFWorkbook book=new XSSFWorkbook(fileIn);
+		XSSFSheet sheet=book.getSheet(sheetName);
+		return sheet;	
+	}
+	public static XSSFRow getRowLevel(String fileNamewithPath,String sheetName,int rowNumber) throws IOException
+	{
+		XSSFSheet sheet=ExcelUtils.getSheetLevel(fileNamewithPath, sheetName);
+					
+		int rowsCount=sheet.getPhysicalNumberOfRows();
+		System.out.println(rowsCount);
+		XSSFRow row=sheet.getRow(rowNumber);
+		return row;		
+	}
+	public static String getCellvalueAsString(String fileNamewithPath,String sheetName,int rowNumber,int cellNumber) throws IOException
+	{
+		XSSFRow row=ExcelUtils.getRowLevel(fileNamewithPath, sheetName, rowNumber);
+		XSSFCell cell = row.getCell(5);
+		DataFormatter format= new DataFormatter();
+		String value = format.formatCellValue(cell);
+		return value;		
+	}
+
+}

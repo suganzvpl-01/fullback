@@ -1,0 +1,19 @@
+package com.maveric.test;
+
+import org.testng.annotations.*;
+
+import com.maveric.initialization.LaunchActivities;
+import com.maveric.pageobjects.MavericLoginPage;
+
+public class TimeCardTest extends LaunchActivities {
+
+	@Test
+	public void timeCardFillTest()
+	{
+		System.out.println("Time Card Test");
+		MavericLoginPage login = new MavericLoginPage(driver, wait);
+		
+		
+	}
+	
+}

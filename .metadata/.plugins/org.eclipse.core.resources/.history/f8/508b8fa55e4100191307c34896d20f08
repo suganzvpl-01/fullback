@@ -1,0 +1,9 @@
+package com.maveric.pageobjects;
+
+public class MavericHomePage {
+	public static void waitForQMSDisplay()
+	{
+	
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DatadrivenFramework/utilities&apos; to &apos;Utilities&apos;" description="Rename resource &apos;utilities&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="utilities" name="Utilities" stamp="1551932594442" updateReferences="true"/>
+</session>

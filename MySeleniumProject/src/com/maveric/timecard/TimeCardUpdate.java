@@ -1,0 +1,85 @@
+package com.maveric.timecard;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+public class TimeCardUpdate {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		//explicit Wait Example
+		WebDriverWait wait = new WebDriverWait(driver, 50);
+		// implicit wait example (only once it should be used as that will get applied for the entire page)
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		//one more way for this
+		//driver.get("https://connect.maveric-systems.com");
+		driver.navigate().to("https://connect.maveric-systems.com");
+				
+		/*String myTitle=driver.getTitle();
+		System.out.println("Title of the page\n"+myTitle);
+
+		String pageSource = driver.getPageSource();
+		if(pageSource.contains("Login")) {
+			System.out.println("Test Passed");
+		}*/
+		/*driver.findElement(By.id("LoginForm_username")).sendKeys("suganyasm");
+		driver.findElement(By.id("LoginForm_password")).sendKeys("Maveric2810");
+		driver.findElement(By.name("yt0")).click();*/
+		
+		// xpath
+		//WebElement userNameEle=driver.findElement(By.xpath("//input[@id='LoginForm_username']"));
+		// CSS Selector using Id (#) and for class (.)
+		WebElement userNameEle=driver.findElement(By.cssSelector("#LoginForm_username"));
+		userNameEle.sendKeys("suganyasm");
+		WebElement pwdNameEle=driver.findElement(By.xpath("//input[@id='LoginForm_password']"));
+		pwdNameEle.sendKeys("Maveric08");
+		pwdNameEle.submit();
+		
+		Thread.sleep(3000);
+		driver.navigate().back();
+		Thread.sleep(3000);
+		driver.navigate().forward();
+		Thread.sleep(3000);
+		driver.navigate().refresh();
+		
+		/*WebElement submitEle=driver.findElement(By.xpath("//input[@name='yt0']"));
+		submitEle.click();*/
+		
+		//wait until QMS comes in Page source
+		/*wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='QMS']")));
+		
+		WebElement timeEle=driver.findElement(By.xpath("//a[text()='Timecard']"));
+		// instead of contains replace with starts-with = //a[starts-with(text(),'Welcome')]
+		Actions action = new Actions(driver);
+		
+		action.moveToElement(timeEle).build().perform();
+		
+		WebElement addTimeEle = driver.findElement(By.xpath("//a[text()='Add Timecard']"));
+		addTimeEle.click();
+		
+		WebElement cityEle = driver.findElement(By.xpath("//select[@id='assignedto']"));
+		Select selObj = new Select(cityEle);
+		//selObj.selectByVisibleText("Atlanta");
+		//selObj.selectByIndex(1);
+		selObj.selectByValue("0877732");
+		
+		driver.quit();*/
+		
+		
+		
+		
+	}
+
+}

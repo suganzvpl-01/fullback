@@ -1,0 +1,50 @@
+package com.maveric.pageobjects;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class CorporatePointOfContactPage {
+	
+	@FindBy(xpath="//span[text()='Administration Contact']")
+	WebElement admContact;
+	
+	
+	
+	WebDriver driver;
+	WebDriverWait wait;
+	
+	public CorporatePointOfContactPage(WebDriver driver,WebDriverWait wait) {
+		this.driver=driver;
+		this.wait=wait;
+		PageFactory.initElements(driver, this); // this points to current pages
+	}
+	
+	public void admClick()
+	{
+		admContact.click();
+	}
+	
+	public List<String> getEmails(){
+		List<WebElement> rowsEle = driver.findElements(By.xpath("//table[@id='yw0-body-table']/tbody/tr"));
+		int noOfRows=rowsEle.size();
+		
+		List<WebElement> colsEle = driver.findElements(By.xpath("//table[@id='yw0-body-table']/tbody/tr[1]/td"));
+		int noOfCols=colsEle.size();
+		
+		for(int i=1;i<=noOfRows;i++) {
+			//System.out.println("I Value Is "+i+" .");
+			WebElement namesEle = driver.findElement(By.xpath("//table[@id='yw0-body-table']/tbody/tr["+i+"]/td[5]"));
+			System.out.println(namesEle.getText());		
+		}
+		
+		return null;
+		
+	}
+	
+}

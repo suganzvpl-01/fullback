@@ -1,0 +1,16 @@
+package com.maveric.pageobjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class MavericLoginPage {
+	
+	By usernNameLoc = By.cssSelector("#LoginForm_username");
+	
+	
+	public static void sendUserName()
+	{
+		WebElement userNameEle=driver.findElement(usernNameLoc);
+		userNameEle.sendKeys(prop.getProperty("username"));
+	}
+}
